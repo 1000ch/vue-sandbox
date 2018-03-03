@@ -3,7 +3,11 @@
     <h1 v-on:click="reverseMessage">{{ message }}</h1>
     <span v-if="seen">Now you see me</span>
     <ol>
-      <li v-for="todo in todos">
+      <li
+        v-for="(todo, index) in todos"
+        v-bind:index="index"
+        v-bind:key="todo"
+      >
         {{ todo.text }}
       </li>
     </ol>
