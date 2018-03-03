@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Counter from '@/components/Counter'
-import List from '@/components/List'
+import AppIndex from '@/components/AppIndex'
+import AppCounter from '@/components/AppCounter'
+import AppList from '@/components/AppList'
 
 Vue.use(Router)
 
@@ -10,18 +10,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'AppIndex',
+      component: AppIndex
     },
     {
       path: '/counter',
-      name: 'Counter',
-      component: Counter
+      name: 'AppCounter',
+      component: AppCounter
     },
     {
       path: '/list',
-      name: 'List',
-      component: List
+      name: 'AppList',
+      component: AppList
     }
   ]
 })
