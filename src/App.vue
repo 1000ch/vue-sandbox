@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <app-menu />
-    <router-view />
+    <router-view class="body" />
   </div>
 </template>
 
@@ -24,5 +24,9 @@
 
   .container {
     display: flex;
+  }
+
+  .body {
+    flex-grow: 1;
   }
 </style>
